@@ -18,7 +18,7 @@ _Yutao Zhu_, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou
 - **Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting** [\[PDF\]](https://arxiv.org/pdf/2002.07397.pdf)  
 PAKDD 2020  
 Kun Zhou, Wayne Xin Zhao, _Yutao Zhu_, Ji-Rong Wen, and Jingsong Yu  
-- **ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation** [\[PDF\]](https://link.springer.com/content/pdf/10.1007%2Fs10791-019-09364-x.pdf)[\[Code\]](https://github.com/DaoD/ReBoost)  
+- **ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation** [\[PDF\]](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Zhu2020_Article_ReBoostARetrieval-boostedSeque.pdf)[\[Code\]](https://github.com/DaoD/ReBoost)  
 Information Retrieval Journal 2019  
 _Yutao Zhu_, Zhicheng Dou, Jian-Yun Nie, and Ji-Rong Wen  
 - **Deep cross-platform product matching in e-commerce** [\[PDF\]](https://link.springer.com/content/pdf/10.1007%2Fs10791-019-09360-1.pdf)  
