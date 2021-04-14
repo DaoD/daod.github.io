@@ -3,6 +3,12 @@ My research interests are in natural language processing (NLP) and machine learn
 I obtained my master (2019) and bachelor (2016) degree from Renmin University of China, where I worked with Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ) on various NLP problems.
 
 ### Publications
+- **Modeling Intent Graph for Search Result Diversification** \[To appear\]  
+SIGIR 2021  
+Zhan Su, Zhicheng Dou, _Yutao Zhu_, Xubo Qin, and Ji-Rong Wen  
+- **One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles** \[To appear\]  
+SIGIR 2021  
+Zhengyi Ma, Zhicheng Dou, _Yutao Zhu_, Hanxun Zhong, and Ji-Rong Wen  
 - **Pchatbot: A Large-Scale Dataset for Personalized Chatbot** \[To appear\]  
 SIGIR 2021 (Resource Paper)  
 Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, _Yutao Zhu_, Zhanliang Liu, Zhicheng Dou, and Ji-Rong Wen  
