@@ -30,7 +30,7 @@ Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zh
 - [ScriptWriter: Narrative-Guided Script Generation](https://www.aclweb.org/anthology/2020.acl-main.765.pdf)  
 ACL 2020  
 **Yutao Zhu**, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou  
-\[Video](http://slideslive.com/38928837)\]\[[Code](https://github.com/DaoD/ScriptWriter)\]  
+\[[Video](http://slideslive.com/38928837)\]\[[Code](https://github.com/DaoD/ScriptWriter)\]  
 - **Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting** [\[PDF\]](https://arxiv.org/pdf/2002.07397.pdf)  
 PAKDD 2020  
 Kun Zhou, Wayne Xin Zhao, ___Yutao Zhu___, Ji-Rong Wen, and Jingsong Yu  
