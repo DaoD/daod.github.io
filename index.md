@@ -18,10 +18,11 @@ Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, ___Yutao Zhu___, Zhan
 - [Content Selection Network for Document-grounded Retrieval-based Chatbots](https://arxiv.org/pdf/2101.08426.pdf)  
 ECIR 2021  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, and Zhicheng Dou  
-[\[Code\]](https://github.com/DaoD/CSN/)  
-- **Neural Sentence Ordering Based on Constraint Graphs** [\[PDF\]](https://arxiv.org/pdf/2101.11178.pdf)[\[Code\]](https://github.com/DaoD/ConstraintGraph4NSO)  
+\[[Code](https://github.com/DaoD/CSN/)\]  
+- [Neural Sentence Ordering Based on Constraint Graphs](https://arxiv.org/pdf/2101.11178.pdf)  
 AAAI 2021  
 ___Yutao Zhu___, Kun Zhou, Jian-Yun Nie, Shengchao Liu, and Zhicheng Dou  
+\[[Code](https://github.com/DaoD/ConstraintGraph4NSO)\]  
 - **S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization** [\[PDF\]](https://arxiv.org/pdf/2008.07873.pdf)[\[Code\]](https://github.com/RUCAIBox/CIKM2020-S3Rec)    
 CIKM 2020  
 Kun Zhou, Hui Wang, Wayne Xin Zhao, ___Yutao Zhu___, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen
