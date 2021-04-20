@@ -21,14 +21,16 @@ ECIR 2021
 \[[Code](https://github.com/DaoD/CSN/)\]  
 - [Neural Sentence Ordering Based on Constraint Graphs](https://arxiv.org/pdf/2101.11178.pdf)  
 AAAI 2021  
-___Yutao Zhu___, Kun Zhou, Jian-Yun Nie, Shengchao Liu, and Zhicheng Dou  
+**Yutao Zhu**, Kun Zhou, Jian-Yun Nie, Shengchao Liu, and Zhicheng Dou  
 \[[Code](https://github.com/DaoD/ConstraintGraph4NSO)\]  
-- **S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization** [\[PDF\]](https://arxiv.org/pdf/2008.07873.pdf)[\[Code\]](https://github.com/RUCAIBox/CIKM2020-S3Rec)    
+- [S^3-Rec: Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization](https://arxiv.org/pdf/2008.07873.pdf)  
 CIKM 2020  
-Kun Zhou, Hui Wang, Wayne Xin Zhao, ___Yutao Zhu___, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen
-- **ScriptWriter: Narrative-Guided Script Generation** [\[PDF\]](https://www.aclweb.org/anthology/2020.acl-main.765.pdf)[\[Video\]](http://slideslive.com/38928837)[\[Code\]](https://github.com/DaoD/ScriptWriter)  
+Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zhongyuan Wang, and Ji-Rong Wen  
+\[[Code](https://github.com/RUCAIBox/CIKM2020-S3Rec)\]  
+- [ScriptWriter: Narrative-Guided Script Generation](https://www.aclweb.org/anthology/2020.acl-main.765.pdf)  
 ACL 2020  
-___Yutao Zhu___, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou  
+**Yutao Zhu**, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou  
+\[Video](http://slideslive.com/38928837)\]\[[Code](https://github.com/DaoD/ScriptWriter)\]  
 - **Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting** [\[PDF\]](https://arxiv.org/pdf/2002.07397.pdf)  
 PAKDD 2020  
 Kun Zhou, Wayne Xin Zhao, ___Yutao Zhu___, Ji-Rong Wen, and Jingsong Yu  
