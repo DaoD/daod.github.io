@@ -9,10 +9,10 @@ SIGIR 2021 (Short Paper)
 - [Modeling Intent Graph for Search Result Diversification]() \[To appear\]  
 SIGIR 2021  
 Zhan Su, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, and Ji-Rong Wen  
-- [One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles] \[To appear\]  
+- [One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles]() \[To appear\]  
 SIGIR 2021  
 Zhengyi Ma, Zhicheng Dou, **Yutao Zhu**, Hanxun Zhong, and Ji-Rong Wen  
-- [Pchatbot: A Large-Scale Dataset for Personalized Chatbot] \[To appear\]  
+- [Pchatbot: A Large-Scale Dataset for Personalized Chatbot]() \[To appear\]  
 SIGIR 2021 (Resource Paper)  
 Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, **Yutao Zhu**, Zhanliang Liu, Zhicheng Dou, and Ji-Rong Wen  
 - [Content Selection Network for Document-grounded Retrieval-based Chatbots](https://arxiv.org/pdf/2101.08426.pdf)  
