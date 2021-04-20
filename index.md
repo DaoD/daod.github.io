@@ -15,7 +15,7 @@ Zhengyi Ma, Zhicheng Dou, ___Yutao Zhu___, Hanxun Zhong, and Ji-Rong Wen
 - **Pchatbot: A Large-Scale Dataset for Personalized Chatbot** \[To appear\]  
 SIGIR 2021 (Resource Paper)  
 Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, ___Yutao Zhu___, Zhanliang Liu, Zhicheng Dou, and Ji-Rong Wen  
-- [Content Selection Network for Document-grounded Retrieval-based Chatbots](https://arxiv.org/pdf/2101.08426.pdf) 
+- [Content Selection Network for Document-grounded Retrieval-based Chatbots](https://arxiv.org/pdf/2101.08426.pdf)  
 ECIR 2021  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, and Zhicheng Dou  
 [\[Code\]](https://github.com/DaoD/CSN/)  
