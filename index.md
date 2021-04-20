@@ -6,6 +6,7 @@ I obtained my master (2019) and bachelor (2016) degree from Renmin University of
 - [Proactive Retrieval-based Chatbots based on RelevantKnowledge and Goals]() \[To appear\]  
 SIGIR 2021 (Short Paper)  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, Hao Jiang, and Zhicheng Dou  
+</br>
 - [Modeling Intent Graph for Search Result Diversification]() \[To appear\]  
 SIGIR 2021  
 Zhan Su, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, and Ji-Rong Wen  
