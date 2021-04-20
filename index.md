@@ -71,8 +71,10 @@ NTCIR-13
 ### Experiences
 - 2018.8 - 2019.6, Research Intern, XiaoIce, Microsoft Asia.  
 Mentor: [Ruihua Song](https://www.microsoft.com/en-us/research/people/rsong/)  
+
 - 2016.9 - 2019.6, Research Assistant, Beijing Key Lab of Big Data Management and Analysis Methods.  
 Advisor: [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou), [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ)  
+
 - 2016.6 - 2016.9, Software Engineer, Infosys Technology Limited.  
 Mentor: [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) 
 
