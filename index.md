@@ -3,7 +3,7 @@ My research interests are in natural language processing (NLP) and machine learn
 I obtained my master (2019) and bachelor (2016) degree from Renmin University of China, where I worked with Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ) on various NLP problems.
 
 ### Publications
-- [Proactive Retrieval-based Chatbots based on RelevantKnowledge and Goals]() \[To appear\]  
+- [Proactive Retrieval-based Chatbots based on Relevant Knowledge and Goals]() \[To appear\]  
 SIGIR 2021 (Short Paper)  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, Hao Jiang, and Zhicheng Dou  
 
