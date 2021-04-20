@@ -30,16 +30,17 @@ Kun Zhou, Hui Wang, Wayne Xin Zhao, **Yutao Zhu**, Sirui Wang, Fuzheng Zhang, Zh
 - [ScriptWriter: Narrative-Guided Script Generation](https://www.aclweb.org/anthology/2020.acl-main.765.pdf)  
 ACL 2020  
 **Yutao Zhu**, Ruihua Song, Zhicheng Dou, Jian-Yun Nie, and Jin Zhou  
-\[[Video](http://slideslive.com/38928837)\]\[[Code](https://github.com/DaoD/ScriptWriter)\]  
-- **Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting** [\[PDF\]](https://arxiv.org/pdf/2002.07397.pdf)  
+\[[Code](https://github.com/DaoD/ScriptWriter)\]\[[Video](http://slideslive.com/38928837)\]  
+- [Improving Multi-Turn Response Selection Models with Complementary Last-Utterance Selection by Instance Weighting](https://arxiv.org/pdf/2002.07397.pdf)  
 PAKDD 2020  
-Kun Zhou, Wayne Xin Zhao, ___Yutao Zhu___, Ji-Rong Wen, and Jingsong Yu  
-- **ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation** [\[PDF\]](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Zhu2020_Article_ReBoostARetrieval-boostedSeque.pdf)[\[Code\]](https://github.com/DaoD/ReBoost)  
+Kun Zhou, Wayne Xin Zhao, **Yutao Zhu**, Ji-Rong Wen, and Jingsong Yu  
+- [ReBoost: A Retrieval-Boosted Sequence-to-SequenceModel for Neural Response Generation](http://rali.iro.umontreal.ca/rali/sites/default/files/publis/Zhu2020_Article_ReBoostARetrieval-boostedSeque.pdf)  
 Information Retrieval Journal 2019  
-___Yutao Zhu___, Zhicheng Dou, Jian-Yun Nie, and Ji-Rong Wen  
-- **Deep cross-platform product matching in e-commerce** [\[PDF\]](https://link.springer.com/content/pdf/10.1007%2Fs10791-019-09360-1.pdf)  
+**Yutao Zhu**, Zhicheng Dou, Jian-Yun Nie, and Ji-Rong Wen  
+\[[Code](https://github.com/DaoD/ReBoost)\]  
+- [Deep cross-platform product matching in e-commerce](https://link.springer.com/content/pdf/10.1007%2Fs10791-019-09360-1.pdf)  
 Information Retrieval Journal 2019  
-Juan Li, Zhicheng Dou, ___Yutao Zhu___, Xiaochen Zuo, and Ji-Rong Wen
+Juan Li, Zhicheng Dou, **Yutao Zhu**, Xiaochen Zuo, and Ji-Rong Wen
 - **A Hybrid Framework of Emotion-Aware Seq2Seq Model for Emotional Conversation Generation** [\[PDF\]](https://link.springer.com/content/pdf/10.1007%2F978-3-030-36805-0_12.pdf)  
 NTCIR 2019  
 Xiaohe Li, Jiaqing Liu, Weihao Zheng, Xiangbo Wang, ___Yutao Zhu___, and Zhicheng Dou  
