@@ -3,19 +3,19 @@ My research interests are in natural language processing (NLP) and machine learn
 I obtained my master (2019) and bachelor (2016) degree from Renmin University of China, where I worked with Prof. [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou) and [Ji-Rong Wen](https://scholar.google.com/citations?user=tbxCHJgAAAAJ) on various NLP problems.
 
 ### Publications
-- [Proactive Retrieval-based Chatbots based on Relevant Knowledge and Goals]() \[To appear\]  
+- [Proactive Retrieval-based Chatbots based on Relevant Knowledge and Goals](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_Proactive_Dialogue_Short.pdf)    
 SIGIR 2021 (Short Paper)  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, Hao Jiang, and Zhicheng Dou  
 
-- [Modeling Intent Graph for Search Result Diversification]() \[To appear\]  
+- [Modeling Intent Graph for Search Result Diversification](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_IntentGraph.pdf)  
 SIGIR 2021  
 Zhan Su, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, and Ji-Rong Wen  
 
-- [One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles]() \[To appear\]  
+- [One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_PersonalizedChatbots.pdf)  
 SIGIR 2021  
 Zhengyi Ma, Zhicheng Dou, **Yutao Zhu**, Hanxun Zhong, and Ji-Rong Wen  
 
-- [Pchatbot: A Large-Scale Dataset for Personalized Chatbot]() \[To appear\]  
+- [Pchatbot: A Large-Scale Dataset for Personalized Chatbot](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_Pchatbot.pdf)  
 SIGIR 2021 (Resource Paper)  
 Hongjin Qian, Xiaohe Li, Hanxun Zhong, Yu Guo, Yueyuan Ma, **Yutao Zhu**, Zhanliang Liu, Zhicheng Dou, and Ji-Rong Wen  
 
