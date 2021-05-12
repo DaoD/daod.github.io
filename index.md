@@ -6,6 +6,7 @@ I obtained my master (2019) and bachelor (2016) degree from Renmin University of
 - [Proactive Retrieval-based Chatbots based on Relevant Knowledge and Goals](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_Proactive_Dialogue_Short.pdf)    
 SIGIR 2021 (Short Paper)  
 **Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Pan Du, Hao Jiang, and Zhicheng Dou  
+\[[Code](https://github.com/DaoD/KPN)\]  
 
 - [Modeling Intent Graph for Search Result Diversification](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_IntentGraph.pdf)  
 SIGIR 2021  
