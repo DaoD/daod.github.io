@@ -11,7 +11,7 @@ SIGIR 2021 (Short Paper)
 - [Modeling Intent Graph for Search Result Diversification](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_IntentGraph.pdf)  
 SIGIR 2021  
 Zhan Su, Zhicheng Dou, **Yutao Zhu**, Xubo Qin, and Ji-Rong Wen  
-\[[Code](https://github.com/su-zhan/Graph4DIV)  
+\[[Code](https://github.com/su-zhan/Graph4DIV)\]  
 
 - [One Chatbot Per Person: Creating Personalized Chatbots based on Implicit User Profiles](http://playbigdata.ruc.edu.cn/dou/publication/2021_SIGIR_PersonalizedChatbots.pdf)  
 SIGIR 2021  
