@@ -68,7 +68,14 @@ Ting Bai, Jian-Yun Nie, Wayne Xin Zhao, **Yutao Zhu**, Pan Du, and Ji-Rong Wen
 
 - [RUCIR at the NTCIR-13 STC-2 Task](http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings13/pdf/ntcir/08-NTCIR13-STC-ZhuY.pdf)  
 NTCIR-13  
-**Yutao Zhu**, Xiangbo Wang, Xiaochen Zuo, Shuqi Lu, Zhengyi Ma, Xinyi Zhang, and Zhicheng Dou 
+**Yutao Zhu**, Xiangbo Wang, Xiaochen Zuo, Shuqi Lu, Zhengyi Ma, Xinyi Zhang, and Zhicheng Dou  
+
+### Preprint  
+- [Emotion Eliciting Machine: Emotion Eliciting Conversation Generation based on Dual Generator](https://arxiv.org/pdf/2105.08251.pdf)  
+Hao Jiang, **Yutao Zhu**, Xinyu Zhang, Zhicheng Dou, Pan Du, Te Pi, and Yantao Jia  
+
+- [BERT4SO: Neural Sentence Ordering by Fine-tuning BERT](https://arxiv.org/pdf/2103.13584.pdf)  
+**Yutao Zhu**, Jian-Yun Nie, Kun Zhou, Shengchao Liu, Yabo Ling, Pan Du  
 
 ### Experiences
 - 2018.8 - 2019.6, Research Intern, XiaoIce, Microsoft Asia.  
