@@ -70,7 +70,7 @@ Ting Bai, Jian-Yun Nie, Wayne Xin Zhao, **Yutao Zhu**, Pan Du, and Ji-Rong Wen
 NTCIR-13  
 **Yutao Zhu**, Xiangbo Wang, Xiaochen Zuo, Shuqi Lu, Zhengyi Ma, Xinyi Zhang, and Zhicheng Dou  
 
-### Preprint  
+### Preprints  
 - [Emotion Eliciting Machine: Emotion Eliciting Conversation Generation based on Dual Generator](https://arxiv.org/pdf/2105.08251.pdf)  
 Hao Jiang, **Yutao Zhu**, Xinyu Zhang, Zhicheng Dou, Pan Du, Te Pi, and Yantao Jia  
 
@@ -88,5 +88,5 @@ Advisor: [Zhicheng Dou](http://playbigdata.ruc.edu.cn/dou), [Ji-Rong Wen](https:
 Mentor: [Anjaneyulu Pasala](https://in.linkedin.com/in/anjaneyulupasala) 
 
 ### Academic Services
-- PC Member (Conference Reviewer): AAAI 2021  
+- PC Member: AAAI 2021  
 - Journal Reviewer: TALLIP
