@@ -26,7 +26,7 @@ redirect_from:
 \* for corresponding author.
 #### 2025
 - ``ACL 2025`` [LLMs + Persona-Plug = Personalized LLMs](https://arxiv.org/pdf/2409.11901), Jiongnan Liu, **Yutao Zhu**, Shuting Wang, Xiaochi Wei, Erxue Min, Yu Lu, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
-- ``ACL 2025`` [Hierarchical Document Refinement for Long-context Retrieval-augmented Generation](), Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, **Yutao Zhu**, Yongkang Wu, Zhonghua Li, Ye Qi, and Zhicheng Dou.
+- ``ACL 2025`` [Hierarchical Document Refinement for Long-context Retrieval-augmented Generation](https://arxiv.org/abs/2505.10413), Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, **Yutao Zhu**, Yongkang Wu, Zhonghua Li, Ye Qi, and Zhicheng Dou.
 - ``ACL 2025`` [Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models](https://arxiv.org/pdf/2412.14574), Wenhan Liu, Xinyu Ma, **Yutao Zhu**, Ziliang Zhao, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
 - ``ACL 2025`` [RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation](), Guanting Dong, Jiajie Jin, Xiaoxi Li, **Yutao Zhu**, Zhicheng Dou, and Ji-Rong Wen.
 - ``ACL 2025`` [Progressive Multimodal Reasoning via Active Retrieval](https://arxiv.org/pdf/2412.14835), Guanting Dong, Chenghao Zhang, Mengjie Deng, **Yutao Zhu**, Zhicheng Dou, and Ji-Rong Wen.
