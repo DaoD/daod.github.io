@@ -25,7 +25,7 @@ redirect_from:
 # Publications 
 \* for corresponding author.
 #### 2025
-- ``arXiv`` [Single LLM, Multiple Roles: A Unified Retrieval-Augmented Generation Framework Using Role-Specific Token Optimization](), **Yutao Zhu**, Jiajie Jin, Hongjin Qian, Zheng Liu, Zhicheng Dou, and Ji-Rong Wen.
+- ``arXiv`` [Single LLM, Multiple Roles: A Unified Retrieval-Augmented Generation Framework Using Role-Specific Token Optimization](https://arxiv.org/abs/2505.15444), **Yutao Zhu**, Jiajie Jin, Hongjin Qian, Zheng Liu, Zhicheng Dou, and Ji-Rong Wen.
 - ``ACL 2025`` [LLMs + Persona-Plug = Personalized LLMs](https://arxiv.org/pdf/2409.11901), Jiongnan Liu, **Yutao Zhu\***, Shuting Wang, Xiaochi Wei, Erxue Min, Yu Lu, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
 - ``ACL 2025`` [Hierarchical Document Refinement for Long-context Retrieval-augmented Generation](https://arxiv.org/abs/2505.10413), Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, **Yutao Zhu\***, Yongkang Wu, Zhonghua Li, Ye Qi, and Zhicheng Dou.
 - ``ACL 2025`` [Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models](https://arxiv.org/pdf/2412.14574), Wenhan Liu, Xinyu Ma, **Yutao Zhu**, Ziliang Zhao, Shuaiqiang Wang, Dawei Yin, and Zhicheng Dou.
