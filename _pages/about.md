@@ -132,4 +132,4 @@ redirect_from:
 # Academic Services
 - AC/SPC: ACL Rolling Review
 - PC Member: ACL, SIGIR, NeurIPS, ICLR, ICML, WWW, SIGKDD, AAAI, EMNLP, CIKM, WSDM, COLING, COLM 
-- Journal Reviewer: TOIS, JASIST, KAIS, TALLIP, Computing Surveys
+- Journal Reviewer: PNAS, TOIS, JASIST, KAIS, TALLIP, Computing Surveys
