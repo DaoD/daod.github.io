@@ -15,8 +15,8 @@ redirect_from:
 - Research interests: Retrieval-augmented generation, large language models for information retrieval, session-based document ranking
 
 # News
+- *2025.9*: Congrats! WebThinker has been accpeted by NeruIPS 2025! See more [details](https://arxiv.org/abs/2504.21776).
 - *2025.8*: Congrats! Our four papers have been accepted by EMNLP 2025! 
-- *2025.5*: We release WebThinker, a fully open-source implementation of a deep research framework. It achieves compelling performance across several challenging benchmarks! See more [details](https://arxiv.org/abs/2504.21776).
 - *2024.12*: Congrats! Our three papers have been accepted by AAAI 2025! 
 - *2024.11*: Congrats! Our paper "A Text-guided Protein Design Framework" has been accepted by Nature Machine Intelligence!
 - *2024.10*: We write a new survey about conversational search. See more [details](https://arxiv.org/abs/2410.15576).
@@ -25,7 +25,7 @@ redirect_from:
 # Publications 
 \* for corresponding author, <sup>\#</sup> for equal contribution.
 #### 2025
-- ``NeurIPS 2025`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), Xiaoxi Li, Jiajie Jin, Guanting Dong, Hongjin Qian, **Yutao Zhu**, Yongkang Wu, Ji-Rong Wen, and Zhicheng Dou. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
+- ``NeurIPS 2025`` [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/abs/2504.21776), Xiaoxi Li, Jiajie Jin, Guanting Dong, Hongjin Qian, Yongkang Wu, Ji-Rong Wen, **Yutao Zhu\***, and Zhicheng Dou\*. <a href="https://github.com/RUC-NLPIR/WebThinker"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/RUC-NLPIR/WebThinker?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
 - ``EMNLP 2025`` [Single LLM, Multiple Roles: A Unified Retrieval-Augmented Generation Framework Using Role-Specific Token Optimization](https://arxiv.org/abs/2505.15444), **Yutao Zhu**, Jiajie Jin, Hongjin Qian, Zheng Liu, Zhicheng Dou, and Ji-Rong Wen.
 - ``EMNLP 2025`` [Enhancing LLM Text Detection with Retrieved Contexts and Logits Distribution Consistency](), Zhaoheng Huang, **Yutao Zhu\***, Ji-Rong Wen, and Zhicheng Dou.
 - ``EMNLP 2025`` [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/abs/2501.05366), Xiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, **Yutao Zhu**, Peitian Zhang, and Zhicheng Dou. <a href="https://github.com/sunnynexus/Search-o1"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sunnynexus/Search-o1?style=flat&logo=github&logoColor=black&labelColor=white&color=white"></a>
