@@ -1,0 +1,183 @@
+1:"$Sreact.fragment"
+2:I[3719,["177","static/chunks/app/layout-7daf31fceb19e921.js"],"ThemeProvider"]
+3:I[7555,[],""]
+4:I[1295,[],""]
+5:I[2548,["177","static/chunks/app/layout-7daf31fceb19e921.js"],"default"]
+6:I[7987,["177","static/chunks/app/layout-7daf31fceb19e921.js"],"default"]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/e76d180db0a7c780.css","style"]
+0:{"P":null,"b":"H51xaeWKjycwN4i51_sRp","p":"","c":["","blog","rubrics",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","rubrics","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e76d180db0a7c780.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"light scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://google-fonts.jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://google-fonts.jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"style","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"}],["$","link",null,{"rel":"stylesheet","id":"gfonts-css","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap","media":"print"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function(){\n                var l = document.getElementById('gfonts-css');\n                if (!l) return;\n                if (l.media !== 'all') {\n                  l.addEventListener('load', function(){ try { l.media = 'all'; } catch(e){} });\n                }\n              })();\n            "}}],["$","noscript",null,{"children":["$","link",null,{"rel":"stylesheet","href":"https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"}]}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              var root = document.documentElement;\n              root.classList.remove('dark');\n              root.classList.add('light');\n              root.setAttribute('data-theme', 'light');\n            "}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L2",null,{"children":[["$","main",null,{"className":"min-h-screen","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$L5",null,{"lastUpdated":"June 8, 2026"}],["$","$L6",null,{}]]}]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","rubrics","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","_FaG0PvHS2adjgxquNLkv",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+15:I[2029,["874","static/chunks/874-e909718850e7282e.js","486","static/chunks/486-959453496ced923a.js","953","static/chunks/app/blog/%5Bslug%5D/page-cad79addbd30402c.js"],"default"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+16:T60cd,## Introduction
+
+If you follow the latest developments in the large language model (LLM) space, you may have noticed a term that keeps popping up: rubrics. Whether in OpenAI's blog posts or in papers on evaluation benchmarks, rubrics are being discussed and adopted more and more widely. Based on a recent survey article on rubrics [1], this post offers a comprehensive introduction to the concept, construction methods, and applications of rubrics. I will start with the foundational concepts to help readers understand what rubrics are and how they differ from several related ideas. Then I will walk through the main approaches to building rubrics, from direct generation to online methods that co-evolve with the training process. After that, I will cover how rubrics are applied in practice from two perspectives: model training and model evaluation. Finally, I will discuss the open problems in this area and the directions it may take in the future.
+
+## 1. What Are Rubrics?
+
+According to the Merriam-Webster dictionary, rubrics are "a guide listing specific criteria for grading or scoring academic papers, projects, or tests." In other words, they are a set of **scoring criteria**. The core idea is simple: **take a vague, holistic quality judgment and break it down into a set of explicit, individually assessable criteria**. Each criterion corresponds to a specific aspect of quality. Evaluators score each criterion one by one, then aggregate the results into an overall assessment.
+
+In the context of LLMs, rubrics play exactly this role. As LLMs grow more capable, the tasks they handle become increasingly complex. From writing research reports to executing long-horizon agent tasks, these scenarios demand multi-faceted assessments of output quality. How to systematically evaluate this quality becomes a critical question, and rubrics offer one answer by providing a structured, multi-dimensional evaluation framework for LLM outputs.
+
+Some readers might ask: there are already many methods for evaluating LLMs, so why do we need rubrics? For relatively simple tasks, evaluation is indeed straightforward. In math, an answer is either right or wrong, and accuracy captures model performance well. In code generation, running test cases tells you whether the code is correct. These tasks share a common trait: there exists a clear, automatically verifiable correct answer.
+
+But when tasks become more complex and open-ended, the situation changes entirely. Suppose we ask an LLM to write an in-depth research report on information retrieval. How should we evaluate whether the report is good? There is clearly no single "correct answer" to compare against. The quality of such a report depends on many factors: whether it covers the key issues of the topic, whether the logic flows well, whether the writing is clear and readable, and whether the cited data and sources are reliable. Summarizing all these dimensions with a single score would be neither comprehensive nor precise.
+
+Several concepts are closely related to rubrics:
+
+The first is the **reward model**. A reward model learns from human preference data how to score model outputs. This approach can assess output quality, but its output is typically a single score, with the evaluation criteria entirely implicit in the model parameters. It is difficult to know which aspects of quality the score actually reflects, and it is hard to make adjustments for any specific dimension. By contrast, rubrics spell out each evaluation dimension in natural language, making them inspectable, adjustable, and analyzable, with much better interpretability. In reinforcement learning, both reward models and rubrics can serve as sources of reward signals. Moreover, rubrics themselves can be used to train reward models.
+
+The second is **RLVR (Reinforcement Learning from Verifiable Rewards)**, which obtains reward signals through verifiable means. This approach gained widespread attention after DeepSeek-R1 and has achieved strong results in domains like math and code. However, it fundamentally relies on the premise that the correct answer can be automatically verified. For open-ended tasks like writing reports, making plans, or conducting multi-turn conversations, it is very difficult to find such "verifiable" reward signals. Therefore, RLVR (with emphasis on "VR") is best suited for tasks with clear correct answers, while rubrics can provide structured evaluation signals for open-ended tasks that lack standard answers.
+
+The third is **LLM-as-a-Judge**, which means directly using one LLM to evaluate another model's output. This concept and rubrics are actually complementary. If we can define accurate and clear rubrics, we can leverage LLMs to help determine output scores. In other words, LLM-as-a-Judge is one way to compute rubrics. (Of course, LLM judgments can also be biased, but that is a separate issue.)
+
+In summary, rubrics provide an explicit, interpretable middle layer. They can be used to evaluate model outputs, and naturally they can also serve as reward signals for model training. This is why rubrics are receiving increasing attention.
+
+## 2. How to Build Rubrics
+
+The quality of rubrics directly determines the effectiveness of downstream applications. Whether used for evaluating or training models, the rubrics themselves must be sufficiently accurate and comprehensive. So how are rubrics built? Existing methods can be broadly categorized into four types, ranging from simple to complex, reflecting the ongoing evolution of this field.
+
+### 2.1 Direct Generation
+
+Direct generation is the simplest approach. Given a task description (sometimes accompanied by a candidate response), a capable LLM is asked to directly generate a set of evaluation criteria. This method is simple, fast, and requires no additional preference data or complex pipelines.
+
+But its problems are equally obvious. Since the generation process relies entirely on a single LLM output, the resulting criteria may have incomplete coverage, missing certain important evaluation dimensions. The granularity of different criteria also tends to be inconsistent: some may be too vague (e.g., "the response should be **helpful**"), while others may be overly specific. More critically, this approach lacks a verification step. There is no way to know whether the generated rubrics can actually distinguish good responses from bad ones.
+
+### 2.2 Contrastive Generation
+
+To address the lack of discriminability in direct generation, contrastive generation introduces preference pairs as input signals. A preference pair consists of two responses to the same question: one of higher quality and one of lower quality. This contrastive information is provided to the generation model, which analyzes "why Response A is better than Response B" and extracts evaluation criteria from the differences.
+
+The advantage of this approach is that the generated rubrics inherently have the ability to distinguish between good and bad responses, since they are derived from such contrasts. However, this method also has limitations. Rubrics extracted from a single preference pair tend to be highly specific to that particular comparison and may not generalize well to other instances of similar tasks. Additionally, the most salient differences in a preference pair are not necessarily the most important evaluation dimensions. Sometimes the most noticeable distinction between two responses might simply be a difference in writing style, not in quality.
+
+### 2.3 Iterative Generation
+
+The first two methods both follow a one-shot generation approach: generate once and you're done. Iterative generation treats rubrics construction as a process of repeated refinement, where generation is followed by verification, correction, and re-verification, until the quality meets the required standard.
+
+This process typically focuses on three aspects of quality. The first is **discriminability**: can the generated criteria effectively distinguish good responses from bad ones? If a rubric item assigns similar scores to both good and bad responses, it is not useful and needs to be revised or replaced. The second is **atomicity and coverage**: is each item sufficiently fine-grained and unambiguous, and do all items together cover the various aspects needed for evaluation? The third is **redundancy control**: is there content overlap between items? If so, certain dimensions might be evaluated multiple times, affecting the accuracy of the overall assessment.
+
+Through this repeated cycle of "generate, verify, and refine," the quality of rubrics can be progressively improved. This means that building rubrics is no longer a simple text generation task, but an engineering problem that involves quality control.
+
+### 2.4 Online Generation
+
+The previous three methods share a common assumption: rubrics are fully constructed before use and remain unchanged afterward. But in actual model training, this assumption can break down.
+
+For example, when rubrics are used as reward signals for training, as the model improves, rubrics that once distinguished good responses from bad ones may gradually lose their effectiveness. Since most responses can now satisfy these criteria, the rubrics lose their discriminability. Even worse, the model may learn to "superficially" satisfy the rubrics without genuinely improving response quality. This is known as reward hacking. Additionally, certain failure modes may only emerge during training and might not be covered by rubrics designed in advance.
+
+Online generation methods are designed to address these issues. The core idea is to update rubrics in sync with the model's training process. As the model's capabilities change, rubrics are adjusted accordingly: new criteria are added and old ones that no longer provide discriminability are retired. This way, rubrics can maintain effective supervision over the current model at all times.
+
+### 2.5 Summary
+
+From direct generation to online generation, these four types of methods reveal a clear trajectory of development. The input signals used for building rubrics have grown increasingly rich, starting from task descriptions alone, then incorporating preference pairs, and finally leveraging model behavior during training. At the same time, quality control mechanisms have continuously strengthened, evolving from no quality verification, to discriminability testing and structured optimization, to continuous dynamic updates. Progress on both dimensions is jointly driving rubrics construction toward greater reliability and practicality.
+
+## 3. How to Use Rubrics
+
+Once rubrics are built, the next natural question is how to use them. Current applications of rubrics are concentrated in two main directions: model training and model evaluation.
+
+### 3.1 For Model Training
+
+As mentioned in Section 1, rubrics can serve as reward signals for model training. Research in this direction has been advancing rapidly and can be broken down into three levels.
+
+**As Reward Signals for Reinforcement Learning**
+
+The most straightforward use is to convert rubrics into reward scores for reinforcement learning. Specifically, the model generates several candidate responses for a given input. A judge model (typically an LLM) then scores each response against every rubric item, and the item-level scores are aggregated into a composite reward through weighted summation. This reward is then fed back to the model via reinforcement learning algorithms such as PPO or GRPO, guiding the model to generate higher-quality responses in subsequent training.
+
+Compared to traditional reward models, this approach has the advantage of producing interpretable reward signals. We can clearly see which dimensions the model scores high or low on, and we can adjust the weights of individual items as needed. For example, in safety-sensitive scenarios, the weight of safety-related items can be increased.
+
+Depending on the object of evaluation, rubrics can be applied at two levels of granularity. One is to evaluate only the model's final response, which is suitable for general text generation tasks. The other is to evaluate the model's entire execution process, including intermediate reasoning steps and tool calls. This latter approach is more suitable for agent-type tasks, since looking only at the final result may miss problems that occurred along the way.
+
+**More Fine-Grained Reward Design**
+
+Simply taking a weighted sum of scores across multiple items, while practical, has some drawbacks. For instance, different items may have interdependent relationships that a simple summation cannot accurately capture. Also, when all candidate responses are of poor quality, a weighted sum can be misleading, because selecting the "least bad" response from a pool of bad ones does not mean that response is actually good.
+
+To address these issues, researchers have made many improvements to reward design. Some work has introduced more flexible aggregation methods, such as a "veto" mechanism on certain critical items. Other work dynamically adjusts the weights of different items across training stages. For example, simpler items might be emphasized early in training, with difficulty gradually increasing later. Still other work focuses on how to better convert rubric-level scores into token-level training signals, making the reward signal more fine-grained.
+
+**As Guidance During Generation**
+
+Beyond their use in the reward stage of training, rubrics can also provide guidance during the model's response generation process. One approach is to inject relevant rubrics into the prompt before the model generates its response, making the model aware of the quality requirements it needs to meet. A more advanced approach has the model first generate its own set of rubrics, then organize and produce its response according to those rubrics. In this way, rubrics transform from a post-hoc evaluation tool into a proactive planning tool, helping the model generate high-quality responses with greater direction and purpose.
+
+### 3.2 For Model Evaluation
+
+Rubrics have an even broader range of applications in evaluation, covering tasks from general capabilities to domain-specific scenarios.
+
+**Evaluating General Tasks**
+
+For evaluating general capabilities such as reasoning, deep research, agent abilities, and alignment, rubrics are becoming standard in an increasing number of benchmarks.
+
+Take reasoning evaluation as an example. The traditional approach is to check only whether the final answer is correct. But rubrics allow us to decompose the evaluation into finer dimensions, such as "whether the problem is understood correctly," "whether the intermediate reasoning steps are sound," and "whether the final answer is correct." This way, even if the model arrives at the right answer, flaws in the reasoning process can still be detected.
+
+In the evaluation of deep research and long-form text generation, the value of rubrics becomes even more apparent. A good research report must simultaneously meet requirements for coverage, factual accuracy, argument quality, and clarity of expression. With rubrics, evaluators can score each aspect independently, preventing strengths in one area from masking weaknesses in others.
+
+For agent task evaluation, rubrics are also shifting from "only looking at results" to "focusing on the process." During task execution, agents deal with planning, tool selection, parameter configuration, and assessment of intermediate results. Evaluating only the final outcome may overlook errors in the process. For example, an agent might happen to arrive at the correct answer, but the intermediate reasoning and tool calls might have many issues. Process-oriented rubrics can provide a more comprehensive assessment of an agent's capabilities.
+
+**Evaluating Domain-Specific Tasks**
+
+When evaluation moves into specific domains, rubrics need to become more specialized. General evaluation dimensions (such as "helpful" or "accurate") are often insufficient in specific domains and need to be supplemented with domain knowledge to design more targeted criteria.
+
+In the medical domain, evaluating LLM-generated responses requires looking beyond whether the medical information is accurate to whether critical safety warnings have been omitted. For instance, when a user describes symptoms that might involve an emergency, does the model's response promptly recommend seeking medical attention? In the legal and financial domains, the evaluation focus shifts to factual accuracy and the practical actionability of recommendations. In code generation, rubrics address dimensions such as algorithmic correctness, completeness of error handling, and code style.
+
+In these domains, one important function of rubrics is safety auditing. By setting up dedicated safety-related criteria, it becomes possible to systematically check whether model outputs contain harmful or non-compliant content. This is especially important in high-risk domains like healthcare and finance.
+
+Furthermore, the object of evaluation is expanding from final outputs to intermediate processes. In complex tasks such as reproducing scientific papers or developing code projects, evaluation looks not only at the final deliverable but also checks whether each intermediate step was executed correctly. This kind of trajectory-level evaluation requires more fine-grained rubrics that correspond to specific steps.
+
+## 4. Open Problems and Future Directions
+
+Although the application of rubrics in model training and evaluation has made considerable progress, the field still faces many unresolved problems. Below I discuss the current challenges and possible future directions from several perspectives.
+
+### 4.1 The Reward Hacking Problem
+
+When using rubrics as reward signals for model training, a prominent risk is reward hacking, where the model learns to "superficially" satisfy the rubrics without genuinely improving its output quality.
+
+For example, if a rubric includes a criterion like "the response should contain specific data and citations," the model might learn to stuff its responses with content that looks like citations but is actually inaccurate or entirely fabricated. The model's optimization objective becomes "getting a high score from the judge model" rather than "truly producing a high-quality response." This issue was touched upon in Section 2 when discussing online generation methods, but current solutions are still not mature enough.
+
+Mitigating this problem likely requires efforts on multiple fronts. On one hand, the rubrics themselves need to be designed more rigorously to reduce the room for models to game the system. On the other hand, the judge model's ability needs to improve so that it can identify responses that are "formally compliant but substantively inadequate." Additionally, the online generation methods mentioned earlier, which dynamically update rubrics in response to changing model behavior, represent another important approach to combating reward hacking.
+
+### 4.2 Evaluation Bias
+
+When using the LLM-as-a-Judge approach to compute rubrics scores, the biases of the judge model itself become a significant concern.
+
+Research has found that LLMs exhibit various systematic biases when performing evaluation. For example, position bias causes the model to assign higher scores to responses that appear first (or last). Length bias leads the model to rate longer responses as higher quality. There is also self-preference, where certain models tend to score their own generated content higher. These biases directly affect the accuracy of rubrics scoring. If these biased scores are then used for model training, the model may be optimized in the wrong direction.
+
+Some work has already attempted to mitigate these biases, for instance by randomizing the order of candidate responses to reduce position bias, or by using majority voting across multiple judge models to reduce the impact of any single model's bias. But the more fundamental issue is that we currently lack a systematic methodology for detecting and quantifying judge model biases in rubrics evaluation.
+
+### 4.3 Personalization and Subjectivity
+
+An implicit assumption of rubrics is that for the same type of task, there exists a relatively uniform set of quality standards. But in many real-world scenarios, "what constitutes a good response" varies from person to person.
+
+For example, when asking a model to write a popular science article, some users prefer plain and accessible language, while others favor more technical and professional wording. A rubric designed for general readers might require "avoiding technical jargon," while one designed for domain experts might require "using domain-specific terminology accurately." This means that rubrics should not be static but need to be adjusted according to user preferences and usage contexts.
+
+How to build personalized rubrics is a direction worth exploring in depth. One possible approach is to start with general rubrics and allow users to customize the weights of certain items or add evaluation dimensions tailored to specific user groups. Another approach is to let the system automatically learn user preferences from their historical feedback and adjust the content and weights of rubrics accordingly.
+
+### 4.4 Safety of Rubrics
+
+Rubrics themselves can also become a source of safety risks. If rubrics are automatically generated by LLMs, might the generated criteria contain inappropriate content? If rubrics are used for training, could problematic rubrics guide the model toward producing harmful outputs?
+
+As mentioned in Section 3, rubrics can be used for safety auditing to check for harmful content in model outputs. But conversely, if the rubrics themselves are poorly designed, safety issues may be overlooked. For instance, if a set of rubrics focuses only on the dimensions of "helpfulness" and "accuracy" without including safety-related criteria, then a model optimizing for these rubrics might generate information that should not be provided in order to boost its "helpfulness" score.
+
+Therefore, for automatically generated rubrics, a review mechanism needs to be established to ensure that the generated criteria do not introduce safety risks. At the same time, when using rubrics for model training, safety-related criteria should be given higher priority to prevent them from being overshadowed by optimization on other dimensions.
+
+### 4.5 Efficiency and Cost
+
+Using rubrics for evaluation, especially via the LLM-as-a-Judge approach, incurs significant computational costs. For each candidate response, the judge model needs to evaluate all rubric items one by one. If a set of rubrics contains a dozen or more items and each input has multiple candidate responses, the number of required API calls grows rapidly. In model training scenarios, this problem is even more pronounced because every training step requires evaluating a large number of samples.
+
+How to reduce costs while maintaining evaluation quality is a challenge that must be addressed for rubrics to be deployed at scale. Possible directions include developing more efficient evaluation strategies (such as using simple rules to filter out obviously unqualified responses first, then conducting detailed evaluation only on the remaining ones) or training specialized small judge models to replace large models for rubrics evaluation.
+
+## Conclusion
+
+This article provided a systematic introduction to rubrics from four perspectives: what they are, how to build them, how to use them, and what challenges remain. The core value of rubrics lies in providing an explicit, interpretable, and adjustable set of quality standards for LLM evaluation and training. Compared to reward signals implicit in model parameters or evaluation methods that rely on a single score, rubrics let us see more clearly "where the strengths are" and "where the weaknesses are," giving quality improvement a more definitive direction.
+
+Of course, rubrics are not a silver bullet. Their effectiveness depends on the quality of the criteria design, the judgment capabilities of the judge model, and how well they match the specific application scenario. But as a method for converting vague quality judgments into structured evaluations, rubrics have significant practical value in today's rapidly evolving LLM landscape. As construction methods continue to mature and application scenarios keep expanding, rubrics are poised to play an increasingly important role in model training and evaluation.
+
+## References
+[1] The Rules of the Game: A Survey of Rubrics for Large Language Models, [https://github.com/RUC-NLPIR/Rubrics_Survey](https://github.com/RUC-NLPIR/Rubrics_Survey)
+7:["$","div",null,{"className":"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12","children":["$","$L15",null,{"post":{"slug":"rubrics","title":"A Deep Dive into Rubrics for Large Language Models","date":"2026-05-24","summary":"This article provides a systematic overview of rubrics in the context of large language models. Rubrics are structured, multi-dimensional scoring criteria that break down vague quality judgments into explicit, individually assessable standards. They are particularly valuable for evaluating open-ended tasks like report writing and agent workflows, where no single correct answer exists.","content":"$16"},"toc":[{"id":"introduction","text":"Introduction","level":2},{"id":"1-what-are-rubrics","text":"1. What Are Rubrics?","level":2},{"id":"2-how-to-build-rubrics","text":"2. How to Build Rubrics","level":2},{"id":"21-direct-generation","text":"2.1 Direct Generation","level":3},{"id":"22-contrastive-generation","text":"2.2 Contrastive Generation","level":3},{"id":"23-iterative-generation","text":"2.3 Iterative Generation","level":3},{"id":"24-online-generation","text":"2.4 Online Generation","level":3},{"id":"25-summary","text":"2.5 Summary","level":3},{"id":"3-how-to-use-rubrics","text":"3. How to Use Rubrics","level":2},{"id":"31-for-model-training","text":"3.1 For Model Training","level":3},{"id":"32-for-model-evaluation","text":"3.2 For Model Evaluation","level":3},{"id":"4-open-problems-and-future-directions","text":"4. Open Problems and Future Directions","level":2},{"id":"41-the-reward-hacking-problem","text":"4.1 The Reward Hacking Problem","level":3},{"id":"42-evaluation-bias","text":"4.2 Evaluation Bias","level":3},{"id":"43-personalization-and-subjectivity","text":"4.3 Personalization and Subjectivity","level":3},{"id":"44-safety-of-rubrics","text":"4.4 Safety of Rubrics","level":3},{"id":"45-efficiency-and-cost","text":"4.5 Efficiency and Cost","level":3},{"id":"conclusion","text":"Conclusion","level":2},{"id":"references","text":"References","level":2}]}]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","title","0",{"children":"A Deep Dive into Rubrics for Large Language Models | Yutao Zhu"}],["$","meta","1",{"name":"description","content":"This article provides a systematic overview of rubrics in the context of large language models. Rubrics are structured, multi-dimensional scoring criteria that break down vague quality judgments into explicit, individually assessable standards. They are particularly valuable for evaluating open-ended tasks like report writing and agent workflows, where no single correct answer exists."}],["$","meta","2",{"name":"author","content":"Yutao Zhu"}],["$","meta","3",{"name":"keywords","content":"Yutao Zhu,PhD,Research,Renmin University of China"}],["$","meta","4",{"name":"creator","content":"Yutao Zhu"}],["$","meta","5",{"name":"publisher","content":"Yutao Zhu"}],["$","meta","6",{"property":"og:title","content":"Yutao Zhu"}],["$","meta","7",{"property":"og:description","content":"Postdoctoral researcher at Renmin University of China."}],["$","meta","8",{"property":"og:site_name","content":"Yutao Zhu's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Yutao Zhu"}],["$","meta","13",{"name":"twitter:description","content":"Postdoctoral researcher at Renmin University of China."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}

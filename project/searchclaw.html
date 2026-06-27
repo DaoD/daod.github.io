@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SearchClaw — Agentic Search, Right in Your Terminal</title>
+<meta name="description" content="SearchClaw — a terminal-native deep research agent. Search, read, reason and cite from one command.">
+<style>
+:root {
+  color-scheme: dark;
+  --brand: #00afff;
+  --brand-dim: #0087ff;
+  --accent: #5fd7ff;
+  --success: #5fd75f;
+  --warning: #ffd75f;
+  --error: #ff5f5f;
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-soft: #11161d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --grad: linear-gradient(90deg,#7fdbff,#5fd7ff,#33c4ff,#19b6ff,#00afff,#0096ff,#0087ff,#0072ff,#005fff);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+a { color:inherit; text-decoration:none; }
+code, .mono { font-family:'SF Mono','Fira Code','Cascadia Code',ui-monospace,monospace; }
+
+/* ---- background particles (fixed, behind everything) ---- */
+.bg-particles { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.particle { position:absolute; width:2px; height:2px; background:var(--accent); border-radius:50%; opacity:0; animation:float-up linear infinite; }
+@keyframes float-up {
+  0% { opacity:0; transform:translateY(100vh) scale(0); }
+  10% { opacity:.45; } 90% { opacity:.2; }
+  100% { opacity:0; transform:translateY(-60px) scale(1); }
+}
+/* soft glow blobs */
+.glow { position:fixed; border-radius:50%; filter:blur(90px); opacity:.16; z-index:0; pointer-events:none; }
+.glow.a { width:480px; height:480px; background:#00afff; top:-120px; left:-120px; }
+.glow.b { width:420px; height:420px; background:#0072ff; bottom:8%; right:-140px; }
+
+main { position:relative; z-index:1; }
+
+/* ---- gradient text ---- */
+.grad {
+  background:var(--grad);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* ---- shared section layout ---- */
+section { padding:96px 24px; }
+.wrap { max-width:1080px; margin:0 auto; }
+.eyebrow {
+  display:inline-block; font-family:'SF Mono',monospace; font-size:13px; font-weight:600;
+  letter-spacing:1.5px; text-transform:uppercase; color:var(--brand);
+  border:1px solid var(--border); border-radius:20px; padding:5px 14px;
+  background:var(--bg-card); margin-bottom:20px;
+}
+.sec-title { font-size:clamp(28px,5vw,42px); font-weight:800; line-height:1.15; margin-bottom:14px; letter-spacing:-.5px; }
+.sec-desc { font-size:clamp(16px,2.4vw,19px); color:var(--muted); max-width:680px; margin-bottom:48px; }
+.center { text-align:center; }
+.center .sec-desc { margin-left:auto; margin-right:auto; }
+
+/* ---- reveal on scroll ---- */
+.reveal { opacity:0; transform:translateY(34px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
+.reveal.in { opacity:1; transform:translateY(0); }
+.reveal.d1 { transition-delay:.08s; }
+.reveal.d2 { transition-delay:.16s; }
+.reveal.d3 { transition-delay:.24s; }
+.reveal.d4 { transition-delay:.32s; }
+
+/* ======================= HERO ======================= */
+.hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:120px 24px 80px; position:relative; }
+.logo-art {
+  font-family:'SF Mono','Fira Code',monospace; white-space:pre;
+  font-size:clamp(5px,1.55vw,15px); line-height:1.15;
+  filter:drop-shadow(0 0 40px rgba(0,175,255,.35));
+  margin-bottom:26px;
+}
+.hero-tagline { font-size:clamp(20px,4vw,32px); color:var(--muted); font-style:italic; margin-bottom:14px; }
+.hero-tagline .d { color:var(--accent); font-style:normal; }
+.hero-sub { font-size:clamp(15px,2.6vw,20px); color:var(--muted); max-width:620px; margin:0 auto 36px; }
+.hero-cta { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; align-items:center; }
+.btn {
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:16px; font-weight:600; padding:13px 24px; border-radius:10px;
+  border:1px solid transparent; cursor:pointer; transition:all .2s; white-space:nowrap;
+}
+.btn-primary { background:var(--brand); color:#04121f; box-shadow:0 6px 24px rgba(0,175,255,.3); }
+.btn-primary:hover { background:#33c4ff; transform:translateY(-2px); }
+.btn-ghost { border-color:var(--border); background:var(--bg-card); color:var(--text); }
+.btn-ghost:hover { border-color:var(--brand); background:rgba(0,175,255,.1); }
+.hero-install {
+  margin-top:30px; display:inline-flex; align-items:center; gap:12px;
+  font-family:'SF Mono',monospace; font-size:clamp(13px,2.2vw,16px);
+  border:1px solid var(--border); border-radius:10px; padding:13px 22px; background:var(--bg-card);
+}
+.hero-install .dollar { color:var(--success); }
+.copy-btn { cursor:pointer; color:var(--muted); border:none; background:none; font-size:14px; transition:color .2s; padding:2px 4px; }
+.copy-btn:hover { color:var(--accent); }
+.scroll-hint { position:absolute; bottom:28px; left:50%; transform:translateX(-50%); color:var(--muted); font-size:13px; animation:bob 2s ease-in-out infinite; }
+@keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0);} 50%{transform:translateX(-50%) translateY(8px);} }
+
+/* ======================= STATS ======================= */
+.stats-sec { background:linear-gradient(180deg, transparent, rgba(0,175,255,.04), transparent); }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+.stat { text-align:center; padding:22px 12px; }
+.stat .num { font-size:clamp(40px,7vw,68px); font-weight:800; line-height:1; }
+.stat .lab { font-size:clamp(13px,2vw,17px); color:var(--muted); margin-top:10px; }
+
+/* ======================= FEATURES ======================= */
+.fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+.fcard {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:26px 22px; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.fcard:hover { transform:translateY(-4px); border-color:var(--brand); box-shadow:0 14px 40px rgba(0,175,255,.12); }
+.ficon { font-size:32px; margin-bottom:14px; display:block; }
+.ftitle { font-size:19px; font-weight:700; margin-bottom:8px; }
+.fdesc { font-size:15px; color:var(--muted); line-height:1.6; }
+.fdesc code { color:var(--accent); font-size:.9em; background:rgba(95,215,255,.08); padding:1px 6px; border-radius:4px; }
+
+/* ======================= WORKFLOW ======================= */
+.flow { display:flex; align-items:flex-start; justify-content:center; gap:4px; flex-wrap:wrap; }
+.fstep { display:flex; flex-direction:column; align-items:center; gap:12px; padding:12px 6px; width:120px; }
+.fcircle {
+  width:78px; height:78px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:32px; border:2px solid var(--brand);
+  background:rgba(0,175,255,.08); box-shadow:0 0 24px rgba(0,175,255,.12);
+}
+.flabel { font-size:16px; font-weight:600; }
+.fsub { font-size:12.5px; color:var(--muted); text-align:center; }
+.farrow { color:var(--brand); font-size:26px; opacity:.55; align-self:center; margin-top:24px; }
+
+/* ======================= TERMINAL DEMO ======================= */
+.demo-sec { background:var(--bg-soft); }
+.terminal {
+  max-width:880px; margin:0 auto; background:var(--bg);
+  border-radius:12px; overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,.55), 0 0 50px rgba(0,175,255,.08);
+  border:1px solid var(--border);
+}
+.tbar { background:#1c2128; padding:11px 16px; display:flex; align-items:center; gap:8px; border-bottom:1px solid var(--border); }
+.tdot { width:12px; height:12px; border-radius:50%; }
+.tdot.r{background:#ff5f56;} .tdot.y{background:#ffbd2e;} .tdot.g{background:#27c93f;}
+.ttitle { flex:1; text-align:center; color:var(--muted); font-size:13px; font-family:'SF Mono',monospace; }
+.tbody {
+  padding:18px 22px; font-family:'SF Mono','Fira Code',monospace;
+  font-size:clamp(11px,1.7vw,14px); line-height:1.7; text-align:left;
+  min-height:300px;
+}
+.tbody .cursor { display:inline-block; width:8px; height:1.05em; background:var(--accent); animation:blink 1s step-end infinite; vertical-align:text-bottom; margin-left:1px; }
+@keyframes blink { 50%{opacity:0;} }
+.t-brand{color:#00afff;} .t-accent{color:#5fd7ff;} .t-success{color:#5fd75f;}
+.t-warning{color:#ffd75f;} .t-muted{color:#8b949e;} .t-white{color:#e6edf3;} .t-bold{font-weight:700;}
+.demo-q { color:var(--success); font-weight:700; margin-bottom:14px; }
+.demo-plan { border:1px solid var(--brand-dim); border-radius:8px; padding:10px 16px; margin-bottom:14px; }
+.pp-label{color:var(--brand);font-weight:700;} .pp-count{color:var(--muted);} .pp-bar-done{color:var(--success);} .pp-bar-todo{color:#3a3a3a;}
+.plan-task{line-height:1.85;} .pt-done{color:var(--success);} .pt-active{color:var(--accent);} .pt-pending{color:var(--muted);}
+.demo-activity { border-top:1px solid #2a2f37; margin-top:6px; padding-top:10px; }
+.act-title { color:var(--accent); font-size:.86em; font-weight:600; margin-bottom:6px; }
+.sess-line { opacity:0; transform:translateX(-5px); transition:all .2s ease; }
+.sess-line.show { opacity:1; transform:translateX(0); }
+.r-h2{color:var(--brand);font-weight:700;margin:10px 0 4px;} .r-p{color:#c9d4e0;} .cite{color:var(--accent);}
+.r-src{color:var(--accent);}
+
+/* ======================= COMMANDS ======================= */
+.cgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px 22px; }
+.citem { display:flex; align-items:baseline; gap:14px; padding:13px 18px; background:var(--bg-card); border-radius:9px; border:1px solid var(--border); transition:border-color .2s; }
+.citem:hover { border-color:var(--brand); }
+.cname { font-family:'SF Mono',monospace; color:var(--accent); font-weight:600; font-size:16px; min-width:92px; }
+.chelp { color:var(--muted); font-size:15px; }
+
+/* ======================= CTA / CLOSING ======================= */
+.cta-sec { text-align:center; padding:110px 24px; }
+.cta-logo { font-family:'SF Mono',monospace; white-space:pre; font-size:clamp(4px,1.3vw,11px); line-height:1.15; filter:drop-shadow(0 0 30px rgba(0,175,255,.3)); margin-bottom:26px; }
+.cta-title { font-size:clamp(26px,5vw,40px); font-weight:800; margin-bottom:28px; line-height:1.2; }
+.repo-link { display:inline-flex; align-items:center; gap:8px; margin-top:24px; color:var(--accent); font-size:17px; font-weight:600; transition:color .2s; }
+.repo-link:hover { color:#7fdbff; }
+.built-with { margin-top:14px; color:var(--muted); font-size:15px; }
+
+/* ======================= FOOTER ======================= */
+footer { border-top:1px solid var(--border); padding:34px 24px; text-align:center; color:var(--muted); font-size:14px; }
+footer a { color:var(--accent); }
+
+/* ======================= responsive ======================= */
+@media (max-width:680px){
+  section { padding:64px 20px; }
+  .stats { grid-template-columns:repeat(2,1fr); gap:14px; }
+  .flow { gap:0; }
+  .farrow { transform:rotate(90deg); margin:0; opacity:.5; }
+  .fstep { width:100%; flex-direction:row; gap:16px; justify-content:flex-start; }
+  .fstep .flabel, .fstep .fsub { text-align:left; }
+  .fstep > div:last-child { display:flex; flex-direction:column; gap:2px; }
+  .fcircle { width:56px; height:56px; font-size:24px; flex:none; }
+  .hero { padding:96px 20px 70px; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-particles" id="particles"></div>
+<div class="glow a"></div>
+<div class="glow b"></div>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="logo-art grad reveal">███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗ ██████╗██╗      █████╗ ██╗    ██╗
+██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║██╔════╝██║     ██╔══██╗██║    ██║
+███████╗█████╗  ███████║██████╔╝██║     ███████║██║     ██║     ███████║██║ █╗ ██║
+╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║██║     ██║     ██╔══██║██║███╗██║
+███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║╚██████╗███████╗██║  ██║╚███╔███╔╝
+╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═╝ ╚══╝╚══╝</div>
+    <p class="hero-tagline reveal d1"><span class="d">◆</span> Agentic Search, Right in Your Terminal</p>
+    <p class="hero-sub reveal d2">Search · Read · Reason · Cite — one command, from a question to a deep, cited answer. No browser-switching, no copy-paste.</p>
+    <div class="hero-cta reveal d3">
+      <a class="btn btn-primary" href="https://github.com/RUC-NLPIR/SearchClaw" target="_blank" rel="noopener">★ Star on GitHub</a>
+      <a class="btn btn-ghost" href="#features">Explore features ↓</a>
+    </div>
+    <div class="hero-install reveal d4">
+      <span class="dollar">$</span><span id="install-cmd">pip install -e . && searchclaw</span>
+      <button class="copy-btn" data-copy="pip install -e . && searchclaw" title="Copy">⧉</button>
+    </div>
+    <div class="scroll-hint">scroll to explore ↓</div>
+  </header>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats-sec center">
+    <div class="wrap">
+      <span class="eyebrow reveal">Built for the terminal</span>
+      <h2 class="sec-title reveal d1">A Search Agent Where You Already Work</h2>
+      <p class="sec-desc reveal d2">Run deep, multi-source research without ever leaving the command line.</p>
+      <div class="stats">
+        <div class="stat reveal d1"><div class="num grad" data-count="14">0</div><div class="lab">Built-in Tools</div></div>
+        <div class="stat reveal d1"><div class="num grad" data-count="10">0</div><div class="lab">Slash Commands</div></div>
+        <div class="stat reveal d2"><div class="num grad">∞</div><div class="lab">Sources</div></div>
+        <div class="stat reveal d2"><div class="num grad">1</div><div class="lab">Command to Launch</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section id="features">
+    <div class="wrap">
+      <span class="eyebrow reveal">Core capabilities</span>
+      <h2 class="sec-title reveal d1">Not Just Search — a Full Research Assistant</h2>
+      <p class="sec-desc reveal d2">Everything you need to go from a question to a trustworthy, cited report.</p>
+      <div class="fgrid">
+        <div class="fcard reveal d1"><span class="ficon">🔍</span><div class="ftitle">Multi-Source Search</div><div class="fdesc">Web, academic papers, news, and WeChat — one question covers them all.</div></div>
+        <div class="fcard reveal d1"><span class="ficon">📂</span><div class="ftitle">@path Local Files</div><div class="fdesc"><code>@~/papers</code> grants a directory; PDFs &amp; DOCX join the research.</div></div>
+        <div class="fcard reveal d2"><span class="ficon">🧠</span><div class="ftitle">Cross-Session Memory</div><div class="fdesc">Findings are saved automatically and recalled on your next question.</div></div>
+        <div class="fcard reveal d2"><span class="ficon">📋</span><div class="ftitle">Research Plan Tracking</div><div class="fdesc">A live progress bar &amp; task status — see every step the agent takes.</div></div>
+        <div class="fcard reveal d1"><span class="ficon">📄</span><div class="ftitle">One-Click DOCX Export</div><div class="fdesc"><code>/export report.docx</code> produces a cited Word document.</div></div>
+        <div class="fcard reveal d2"><span class="ficon">🧩</span><div class="ftitle">Skills System</div><div class="fdesc">Define task-specific research strategies via <code>SKILL.md</code>.</div></div>
+        <div class="fcard reveal d1"><span class="ficon">🔄</span><div class="ftitle">Session Persistence</div><div class="fdesc"><code>/sessions</code> + <code>/load</code> resume any context anytime.</div></div>
+        <div class="fcard reveal d2"><span class="ficon">🌐</span><div class="ftitle">Multi-LLM Support</div><div class="fdesc">Anthropic / OpenAI / DeepSeek / Gemini — plug in any provider.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKFLOW ===================== -->
+  <section class="center" style="background:linear-gradient(180deg, transparent, rgba(0,175,255,.04), transparent);">
+    <div class="wrap">
+      <span class="eyebrow reveal">How it works</span>
+      <h2 class="sec-title reveal d1">From Your Question to a Deep Answer</h2>
+      <p class="sec-desc reveal d2">Fully automated — the agent plans, searches, reads deeply, and cites every claim.</p>
+      <div class="flow">
+        <div class="fstep reveal d1"><div class="fcircle">💬</div><div><div class="flabel">Ask</div><div class="fsub">Pose a research question</div></div></div>
+        <div class="farrow reveal d1">→</div>
+        <div class="fstep reveal d1"><div class="fcircle">📋</div><div><div class="flabel">Plan</div><div class="fsub">Break it into tasks</div></div></div>
+        <div class="farrow reveal d2">→</div>
+        <div class="fstep reveal d2"><div class="fcircle">🔍</div><div><div class="flabel">Search</div><div class="fsub">Across many sources</div></div></div>
+        <div class="farrow reveal d2">→</div>
+        <div class="fstep reveal d2"><div class="fcircle">🔬</div><div><div class="flabel">Deep Read</div><div class="fsub">Extract what matters</div></div></div>
+        <div class="farrow reveal d3">→</div>
+        <div class="fstep reveal d3"><div class="fcircle">📌</div><div><div class="flabel">Cite</div><div class="fsub">Ground every claim</div></div></div>
+        <div class="farrow reveal d3">→</div>
+        <div class="fstep reveal d3"><div class="fcircle">📄</div><div><div class="flabel">Report</div><div class="fsub">Streamed &amp; exportable</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIVE DEMO ===================== -->
+  <section class="demo-sec center">
+    <div class="wrap">
+      <span class="eyebrow reveal">See it in action</span>
+      <h2 class="sec-title reveal d1">Watch It Plan, Search &amp; Cite</h2>
+      <p class="sec-desc reveal d2">The agent breaks your question into tasks, tracks progress live, then streams a cited report.</p>
+      <div class="terminal reveal d2" id="demo-term">
+        <div class="tbar">
+          <div class="tdot r"></div><div class="tdot y"></div><div class="tdot g"></div>
+          <div class="ttitle">searchclaw — zsh — 120×40</div>
+        </div>
+        <div class="tbody">
+          <div class="demo-q" id="d-q"><span class="t-success">❯ </span><span id="d-q-text"></span><span class="cursor" id="d-cursor"></span></div>
+          <div class="demo-plan" id="d-plan" style="display:none"><div id="d-plan-head"></div><div id="d-plan-tasks"></div></div>
+          <div class="demo-activity" id="d-act" style="display:none"><div class="act-title">Activity</div><div id="d-act-lines"></div></div>
+          <div id="d-report"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMMANDS ===================== -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow reveal">Keyboard-driven</span>
+      <h2 class="sec-title reveal d1">Built-in Slash Commands</h2>
+      <p class="sec-desc reveal d2">Do everything without leaving the terminal.</p>
+      <div class="cgrid">
+        <div class="citem reveal d1"><span class="cname">/help</span><span class="chelp">Show all commands</span></div>
+        <div class="citem reveal d1"><span class="cname">/clear</span><span class="chelp">Start a new conversation</span></div>
+        <div class="citem reveal d1"><span class="cname">/config</span><span class="chelp">Re-run the setup wizard</span></div>
+        <div class="citem reveal d1"><span class="cname">/model</span><span class="chelp">Show / switch the model</span></div>
+        <div class="citem reveal d2"><span class="cname">/effort</span><span class="chelp">Tune reasoning depth</span></div>
+        <div class="citem reveal d2"><span class="cname">/export</span><span class="chelp">Export to DOCX</span></div>
+        <div class="citem reveal d2"><span class="cname">/sessions</span><span class="chelp">List past sessions</span></div>
+        <div class="citem reveal d2"><span class="cname">/load</span><span class="chelp">Resume a session</span></div>
+        <div class="citem reveal d3"><span class="cname">/copy</span><span class="chelp">Copy the last answer</span></div>
+        <div class="citem reveal d3"><span class="cname">/verbose</span><span class="chelp">Toggle reasoning output</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-sec">
+    <div class="wrap">
+      <div class="cta-logo grad reveal">███████╗███████╗ █████╗ ██████╗  ██████╗██╗  ██╗ ██████╗██╗      █████╗ ██╗    ██╗
+██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝██║  ██║██╔════╝██║     ██╔══██╗██║    ██║
+███████╗█████╗  ███████║██████╔╝██║     ███████║██║     ██║     ███████║██║ █╗ ██║
+╚════██║██╔══╝  ██╔══██║██╔══██╗██║     ██╔══██║██║     ██║     ██╔══██║██║███╗██║
+███████║███████╗██║  ██║██║  ██║╚██████╗██║  ██║╚██████╗███████╗██║  ██║╚███╔███╔╝
+╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝╚══════╝╚═╝  ╚═╝ ╚══╝╚══╝</div>
+      <h2 class="cta-title reveal d1">Search from your terminal.<br><span class="grad">Powered by AI.</span></h2>
+      <div class="hero-install reveal d2" style="margin-top:0">
+        <span class="dollar">$</span><span>pip install -e . && searchclaw</span>
+        <button class="copy-btn" data-copy="pip install -e . && searchclaw" title="Copy">⧉</button>
+      </div>
+      <div class="reveal d3">
+        <a class="repo-link" href="https://github.com/RUC-NLPIR/SearchClaw" target="_blank" rel="noopener">⭐ github.com/RUC-NLPIR/SearchClaw</a>
+      </div>
+      <p class="built-with reveal d4">Built with Python · Textual · litellm</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  SearchClaw · Agentic Search, Right in Your Terminal · <a href="https://github.com/RUC-NLPIR/SearchClaw" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+<script>
+// ---- particles ----
+(function(){
+  var c=document.getElementById('particles');
+  for(var i=0;i<40;i++){
+    var p=document.createElement('div');p.className='particle';
+    p.style.left=Math.random()*100+'%';
+    p.style.animationDuration=(9+Math.random()*13)+'s';
+    p.style.animationDelay=Math.random()*12+'s';
+    p.style.width=p.style.height=(1+Math.random()*2)+'px';
+    c.appendChild(p);
+  }
+})();
+
+// ---- reveal on scroll ----
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+// ---- count-up (stats) ----
+var counted=false;
+var statsIO=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting && !counted){
+      counted=true;
+      document.querySelectorAll('[data-count]').forEach(function(el){
+        var target=parseInt(el.getAttribute('data-count')); if(!target) return;
+        var cur=0, step=Math.max(1,Math.ceil(target/28));
+        el.textContent='0';
+        var t=setInterval(function(){ cur+=step; if(cur>=target){cur=target;clearInterval(t);} el.textContent=cur; },40);
+      });
+    }
+  });
+},{threshold:0.4});
+var statsSec=document.querySelector('.stats');
+if(statsSec) statsIO.observe(statsSec);
+
+// ---- copy buttons ----
+document.querySelectorAll('.copy-btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    var txt=b.getAttribute('data-copy');
+    navigator.clipboard&&navigator.clipboard.writeText(txt).then(function(){
+      var old=b.textContent; b.textContent='✓'; b.style.color='var(--success)';
+      setTimeout(function(){ b.textContent=old; b.style.color=''; },1400);
+    });
+  });
+});
+
+// ======================= terminal demo (runs once when scrolled into view) =======================
+var planQuery='@~/papers review what’s in this folder, then find the latest frontier research on auto research';
+var planTasks=[
+  'Read the local papers under ~/papers',
+  'Search the web for frontier auto-research work',
+  'Cross-check local findings against new sources',
+  'Synthesize a cited report',
+];
+var planStates=[
+  ['active','pending','pending','pending'],
+  ['done','active','pending','pending'],
+  ['done','done','active','pending'],
+  ['done','done','done','active'],
+  ['done','done','done','done'],
+];
+var activity=[
+  {text:'  📂 local_glob  pattern=*', style:'t-accent', delay:240},
+  {text:'    ⎿ 3 files — auto-research-survey.pdf, agent-loops.pdf, …', style:'t-muted', delay:320},
+  {text:'  📄 local_read  file=auto-research-survey.pdf', style:'t-brand', delay:260},
+  {text:'    ⎿ Extracted 18 pages from PDF  (37,510 chars)', style:'t-muted', delay:320},
+  {text:'  🔍 search_web  query=autonomous research agents frontier 2025', style:'t-accent', delay:260},
+  {text:'    ⎿ Found 10 results — arXiv, Nature, DeepMind  (12,940 chars)', style:'t-muted', delay:320},
+  {text:'  🔬 deep_read  url=https://arxiv.org/abs/2506.xxxxx', style:'t-brand', delay:260},
+  {text:'    ⎿ Findings on self-directed research loops  (16,330 chars)', style:'t-muted', delay:320},
+  {text:'  📌 cite_source  [1] local — auto-research-survey.pdf', style:'t-success', delay:240},
+];
+var reportBlocks=[
+  {cls:'r-h2', text:'Auto Research: Local Notes vs. the Frontier', delay:200},
+  {cls:'r-p', text:'Cross-checking your local survey under <span class="cite">~/papers</span> against the latest published work on autonomous research agents. <span class="cite">[1]</span>', delay:160},
+  {cls:'r-p', text:'Recent papers add adversarial self-checking and multi-agent verification to cut hallucinated citations, with large gains on long-horizon tasks. <span class="cite">[2][3]</span>', delay:160},
+  {cls:'r-src', text:'Sources: [1] local · [2] arXiv 2506.xxxxx · [3] NeurIPS 2025', delay:180},
+];
+
+function sleep(ms){ return new Promise(function(r){ setTimeout(r,ms); }); }
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function planBar(done,total,w){ var f=Math.round(w*done/total); return '<span class="pp-bar-done">'+'█'.repeat(f)+'</span><span class="pp-bar-todo">'+'░'.repeat(w-f)+'</span>'; }
+function renderPlan(head,tasks,state){
+  var done=state.filter(function(s){return s==='done';}).length, total=state.length;
+  head.innerHTML='<span class="pp-label">Research Plan </span><span class="pp-count">'+done+'/'+total+'  </span>'+planBar(done,total,14);
+  var icon={done:['●','pt-done'],active:['◉','pt-active'],pending:['○','pt-pending']};
+  tasks.innerHTML=state.map(function(st,i){ var ic=icon[st]; return '<div class="plan-task"><span class="'+ic[1]+'">  '+ic[0]+' </span><span class="'+(st==='pending'?'pt-pending':'pt-done')+'">'+esc(planTasks[i])+'</span></div>'; }).join('');
+}
+
+async function runDemo(){
+  var qText=document.getElementById('d-q-text');
+  var cursor=document.getElementById('d-cursor');
+  var plan=document.getElementById('d-plan');
+  var planHead=document.getElementById('d-plan-head');
+  var planTasksEl=document.getElementById('d-plan-tasks');
+  var act=document.getElementById('d-act');
+  var actLines=document.getElementById('d-act-lines');
+  var report=document.getElementById('d-report');
+
+  await sleep(400);
+  // type the query
+  for(var i=0;i<planQuery.length;i++){ await sleep(16+Math.random()*22); qText.textContent+=planQuery[i]; }
+  await sleep(450);
+  cursor.style.display='none';
+
+  // plan appears
+  plan.style.display='block';
+  renderPlan(planHead,planTasksEl,planStates[0]);
+  await sleep(500);
+
+  // activity streams
+  act.style.display='block';
+  for(var k=0;k<activity.length;k++){
+    var line=activity[k];
+    await sleep(line.delay||120);
+    var d=document.createElement('div'); d.className='sess-line '+(line.style||''); d.textContent=line.text;
+    actLines.appendChild(d);
+    requestAnimationFrame((function(el){return function(){el.classList.add('show');};})(d));
+    while(actLines.children.length>5) actLines.removeChild(actLines.firstChild);
+  }
+
+  // advance the plan to completion
+  for(var s=1;s<planStates.length;s++){ await sleep(420); renderPlan(planHead,planTasksEl,planStates[s]); }
+
+  // stream a short report
+  await sleep(400);
+  for(var r=0;r<reportBlocks.length;r++){
+    var b=reportBlocks[r];
+    await sleep(b.delay||140);
+    var rb=document.createElement('div'); rb.className=b.cls; rb.innerHTML=b.text;
+    rb.style.opacity='0'; rb.style.transform='translateY(4px)';
+    report.appendChild(rb);
+    (function(el){ requestAnimationFrame(function(){ el.style.transition='all .25s ease'; el.style.opacity='1'; el.style.transform='translateY(0)'; }); })(rb);
+  }
+}
+
+var demoStarted=false;
+var demoIO=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting && !demoStarted){ demoStarted=true; runDemo(); } });
+},{threshold:0.35});
+demoIO.observe(document.getElementById('demo-term'));
+</script>
+</body>
+</html>
